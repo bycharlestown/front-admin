@@ -73,32 +73,36 @@ const Edit = ({ cards }) => {
             </div>
 
             <div className="editor__wrapper-large">
-              <div className="editor__field-wrapper">
+              <div>
                 <h3 className="editor__title">Описание компании:</h3>
                 <EntryField value={card.company_descr} />
               </div>
 
-              <div className="editor__field-wrapper">
+              <div>
                 <h3 className="editor__title">Описание франшизы:</h3>
                 <EntryField value={card.franch_descr} />
               </div>
 
-              <div className="editor__field-wrapper">
+              <div>
                 <h3 className="editor__title">Поддержка:</h3>
                 <EntryField value={card.support_descr} />
               </div>
 
-              <div className="editor__field-wrapper">
+              <div>
                 <h3 className="editor__title">Требования к покупателям:</h3>
                 <EntryField value={card.buyers_requirements} />
               </div>
 
-              <div className="editor__field-wrapper">
+              <div>
                 <h3 className="editor__title">Требования к франшизе:</h3>
                 <EntryField value={card.quarters_requirements} />
               </div>
 
-              <NavLink className="editor__btn-cancel" to="/">
+              <NavLink className="editor__btn editor__btn-save" to="/">
+                Сохранить изменения
+              </NavLink>
+
+              <NavLink className="editor__btn editor__btn-cancel" to="/">
                 Вернуться к списку франшиз
               </NavLink>
             </div>
