@@ -1,14 +1,53 @@
 .franchises
+  padding: 20px
   display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-.franchise
-  display: flex
+  flex-direction: column
   align-items: center
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__search
+    text-align: center
+    position: relative
+    &-title
+      margin-bottom: 5px
+    &-input
+      width: 300px
+      padding: 5px 10px
+      border-radius: 5px
+      border: 1px solid black
+    &-clear
+      background-color: orange
+      color: #fff
+      border-radius: 5px
+      padding: 5px 10px
+.autocomplite
+  position: absolute
+  left: 0
+  top: 60px
+  width: 100%
+  z-index: 100
+  max-height: 200px
+  height: auto
+  overflow: auto
+  text-align: left
+  background-color: grey
+  &__item
+    display: block
+    padding: 10px
+    cursor: pointer
+    transition: .3s
+    &:hover
+      background-color: #ff0088
+.franchise
+  border: 1px solid black
   padding: 5px
   width: 300px
-  border: 1px solid black
-  margin-bottom: 5px
+  border-radius: 10px
+  margin: 10px 20px
+  &__link
+    display: flex
+    align-items: center
   &__image
     width: 70px
     height: 70px

@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Franchise = ({ card }) => {
   return (
-    <li>
-      <NavLink className="franchise" to={`/${card.id}`}>
+    <li className="franchise">
+      <NavLink to={`/${card.id}`} className="franchise__link">
         <img className="franchise__image" src={card.image} />
         <div>
           <h4>{card.title}</h4>
