@@ -8,8 +8,12 @@ const EntryField = ({ value, className }) => {
   return (
     <>
       <textarea
-        className={className}
+        className="entry-field"
         defaultValue={text}
+        onClick={function (e) {
+          e.target.style.height = "auto";
+          e.target.style.height = e.target.scrollHeight + "px";
+        }}
         onChange={(e) => setText(e.target.value)}
       />
     </>

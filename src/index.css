@@ -17,23 +17,32 @@ li {
   list-style-type: none;
 }
 
+.entry-field {
+  resize: none;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .franchise {
   display: block;
   margin-bottom: 5px;
 }
 
+.editor__wrapper-small {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.editor__field-small {
+  width: 49%;
+}
 .editor__title {
   margin-bottom: 5px;
-}
-.editor__input {
-  resize: vertical;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-  width: 90%;
-  vertical-align: center;
-}
-.editor__input-large {
-  height: 300px;
 }
 
 /*# sourceMappingURL=index.css.map */
